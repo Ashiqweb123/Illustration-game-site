@@ -3,6 +3,17 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+/* shared-css  */
+
+.primary {
+    border-radius: 48px;
+    background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
+    border: 0;
+    padding: 21px 40px;
+    color: white;
+}
+
+/* shared-css  */
 
 /* header-css */
 /* nav-css */
@@ -45,19 +56,22 @@
 
 .icon-nav {
     border-radius: 8px;
-    background: rgba(11, 2, 35, 0.10);
+ 
     display: flex;
     justify-content: space-around;
     padding: 20px 12px;
 
 }
-.icon-one
-
+.icon-nav:hover
 {
+    background: rgba(11, 2, 35, 0.10);
+}
+
+.icon-one {
     color: #F61C0D;
 }
-.icon-two
-{
+
+.icon-two {
     color: #000000;
 }
 
@@ -65,14 +79,77 @@
 
 /* header-css */
 
+/* main-css */
+main {
+    max-width: 1140px;
+    margin: 0px auto;
+    /* background-image: url(images/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
 
+.banner-content-one {
+    color: #0B0223;
+    font-family: Work Sans;
+    font-size: 2.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0px
+}
+
+.banner-content-two {
+
+    font-size: 5.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0px;
+    margin-bottom: 10px
+}
+
+.others-btn {
+
+    padding: 21px 40px;
+    border-radius: 48px;
+    background: #4EC5F7;
+    color: white;
+    border: 0;
+}
+.banner-part
+{
+    display: flex;
+    justify-content: space-between;
+}
+.banner-image
+{
+    display: flex;
+    justify-content: space-between;
+}
+.banner-image img
+{
+    width: 500px;
+    height: 300px;
+    margin-left: 200px;
+}
+/* main-css */
 
 /* ------------------------media query css---------- */
 
 @media screen and (max-width:576px) {
     
-  .nav-bar,.list-item ul
+   
+
+    .nav-bar,
+    .list-item ul,.banner-part ,.logo
     {
         flex-direction: column;
     }
+    .banner-image img
+   {
+    width: auto;
+    margin: 0
+   }
 }

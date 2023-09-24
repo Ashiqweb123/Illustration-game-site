@@ -13,6 +13,10 @@
     color: white;
 }
 
+.different-color {
+    color: #FF42A5;
+}
+
 /* shared-css  */
 
 /* header-css */
@@ -56,14 +60,14 @@
 
 .icon-nav {
     border-radius: 8px;
- 
+
     display: flex;
     justify-content: space-around;
     padding: 20px 12px;
 
 }
-.icon-nav:hover
-{
+
+.icon-nav:hover {
     background: rgba(11, 2, 35, 0.10);
 }
 
@@ -82,11 +86,9 @@
 /* main-css */
 main {
     max-width: 1140px;
-    margin: 0px auto;
-    /* background-image: url(images/Group\ 14.png);
-    background-repeat: no-repeat;
-    background-size: cover; */
+    margin: 50px auto;
 }
+
 
 .banner-content-one {
     color: #0B0223;
@@ -118,38 +120,73 @@ main {
     color: white;
     border: 0;
 }
-.banner-part
-{
+
+.banner-part {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around
 }
-.banner-image
-{
-    display: flex;
-    justify-content: space-between;
-}
-.banner-image img
-{
+
+
+.banner-image img {
     width: 500px;
     height: 300px;
-    margin-left: 200px;
+
+}
+
+.instant-play-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.instant-play-img .image-main {
+    width: 500px;
+    height: 500px;
+    margin-left: 50px;
+}
+
+.instant-play-img .image-relative {
+    position: relative;
+    bottom: 150px;
+    width: 200px;
+    height: 200px;
+}
+
+.section-heading {
+
+    font-size: 2rem;
+    font-weight: 700;
+}
+#play-text
+{
+    text-align: right;
+    color: #534C64;
 }
 /* main-css */
 
 /* ------------------------media query css---------- */
 
 @media screen and (max-width:576px) {
-    
-   
+
 
     .nav-bar,
-    .list-item ul,.banner-part ,.logo
-    {
+    .list-item ul,
+    .banner-part,
+    .logo,.instant-play-container {
         flex-direction: column;
     }
-    .banner-image img
-   {
-    width: auto;
-    margin: 0
-   }
+
+    .banner-image img,.instant-play-img .image-relative {
+        width: auto;
+
+    }
+    .instant-play-img .image-main
+    {
+        margin: 0;
+        width: 100%;
+    }
+
+    .banner-part {
+        width: auto;
+    }
 }

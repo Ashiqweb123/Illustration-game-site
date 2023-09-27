@@ -89,7 +89,7 @@
 /* main-css */
 main {
     max-width: 1140px;
-    margin: 50px auto;
+    margin:0 auto;
 }
 
 
@@ -155,7 +155,10 @@ main {
 .card-content{
     position: relative;
 }
-
+.card-text
+{
+    text-align: center;
+}
 .card-content img{
     width: 250px;
     height: 300px;  
@@ -379,9 +382,11 @@ main {
 
     .ending-part {
         padding: 0;
-       max-width: auto;
+       overflow: auto;
+      
 
     }
+   
 
     .footer-list li a,
     .icon-list li a {
